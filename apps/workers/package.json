@@ -1,0 +1,13 @@
+{
+  "name": "@prodsprints/workers",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "python -m uvicorn main:app --reload --host 0.0.0.0 --port 8001",
+    "start": "python -m uvicorn main:app --host 0.0.0.0 --port 8001",
+    "lint": "ruff check .",
+    "format": "ruff format .",
+    "test": "pytest",
+    "build": "echo 'Workers build complete'"
+  }
+}
